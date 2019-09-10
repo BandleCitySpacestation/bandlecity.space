@@ -27,5 +27,6 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.1",
     "typescript": "^3.6.2"
-  }
+  },
+  "engines" : { "node" : ">=12.10.0 <13" }
 }
