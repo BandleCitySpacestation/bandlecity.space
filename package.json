@@ -2,7 +2,7 @@
   "name": "bandlecity.space",
   "version": "1.0.0",
   "description": "Website for Bandle City Spacestation",
-  "main": "src\\index.js",
+  "main": "src\\app.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint src/**"
   },
@@ -28,5 +28,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "typescript": "^3.6.2"
   },
-  "engines" : { "node" : ">=12.10.0 <13" }
+  "engines": {
+    "node": ">=12.10.0 <13"
+  }
 }
