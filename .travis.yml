@@ -1,3 +1,13 @@
 language: node_js
 node_js:
-  - 12.10.0
+- 12.10.0
+
+before_script:
+  - npm run setup
+  - npm run build
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: RVXPuLMcaixL/oP8YLqqN+m+3zGqHizvY2JFX+Z3T6ynWW61B4N91zlM6cFHkn3ZM2nBgmLxnQFCv3Q9sxmM2dizG2cOJR4zWsvesQFqkoncjKskPVeBH/+FahZWFZeImtGkgh3PBbxo92MyVTq0h2UCzoLuRMkhmD0oqlFyJCCR3+AFE41UZV5FZir01qKCJ3ww59Z2el4geWI79TlNqHWkr24IAzpZQ+1HEt35tpc9Ye2UitfKJoqRhUNPIHD4oLCnY0yfoyZnk3VArFuWXVnGosMwjHfuc5CTAvhiq8r2dePUQ2pAknZOalNvmUjnu4uNlNDK/xDLKly0GT89guVVWdBhKGrws33uhRY/VzautX3gvQ8A/eFZ+yCic0zNZs8eJqFT9swOkRlAIB66X27G5KM5JCLeBcTEtz3WiwTvQY60Hq8AgLgD5Yiegj7yaSB8AOwqsEqyoFNvvt6JaVeBRjLu3wftTkPoI+q+3nwoLk54iIvvmsAO7qG/doLe7MrRPTPKzyztDH1imtJqE3qASvHO8Ad0PD1ILWLSOsroTr2tJhw2opOxEDoiTaELgQiaFOrc53val94tpMgtfzRNUUOSbrdxevjDn6X1/mZhiu1GWjDFm0H8sRtDe9ZwVXGidG46t+mAYXOwC60HYOYlQsJidsmrbJF7nXF2AkA=
+  app: bandlecity-space
