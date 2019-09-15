@@ -1,0 +1,35 @@
+{
+  "name": "bandlecity.space",
+  "version": "1.0.0",
+  "description": "Website for Bandle City Spacestation",
+  "main": "src\\app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "./node_modules/.bin/eslint src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BandleCitySpacestation/bandlecity.space.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BandleCitySpacestation/bandlecity.space/issues"
+  },
+  "homepage": "https://github.com/BandleCitySpacestation/bandlecity.space#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "typescript": "^3.6.2"
+  },
+  "engines": {
+    "node": ">=12.10.0 <13"
+  }
+}
