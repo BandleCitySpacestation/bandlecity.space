@@ -3,9 +3,7 @@ module.exports = {
         "es6": true,
         "node": true
     },
-    "extends": [
-        "standard"
-    ],
+    "extends": ["plugin:@typescript-eslint/recommended"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -25,6 +23,8 @@ module.exports = {
     "rules": {
         "semi": ["error", "always"],
         "indent": ["error", "tab"],
-        "no-tabs": 0
+        "no-tabs": 0,
+        "space-before-function-paren": ["error", "never"],
+        "space-in-parens": ["error", "never"]
     }
 };
