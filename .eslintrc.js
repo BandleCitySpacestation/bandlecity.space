@@ -23,6 +23,8 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "indent": ["error", "tab"],
+        "no-tabs": 0
     }
 };

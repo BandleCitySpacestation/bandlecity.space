@@ -2,10 +2,12 @@
   "name": "bandlecity.space",
   "version": "1.0.0",
   "description": "Website for Bandle City Spacestation",
-  "main": "src\\app.js",
+  "main": "build\\app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "test": "./node_modules/.bin/eslint src/**"
+    "start": "./node_modules/.bin/tsc && node build/app.js",
+    "dev": "./node_modules/.bin/ts-node-dev --respawn --transpileOnly ./src/app.ts",
+    "test": "./node_modules/.bin/eslint src/**",
+    "tsc": "./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,16 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.1",
+    "ts-node-dev": "^1.0.0-pre.42",
     "typescript": "^3.6.2"
   },
   "engines": {
     "node": ">=12.10.0 <13"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1",
+    "express-subdomain": "^1.0.5",
+    "ts-node": "^8.3.0"
   }
 }
