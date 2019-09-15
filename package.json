@@ -2,7 +2,6 @@
   "name": "bandlecity.space",
   "version": "1.0.0",
   "description": "Website for Bandle City Spacestation",
-  "main": "build\\app.js",
   "scripts": {
     "start": "./node_modules/.bin/tsc && node build/app.js",
     "dev": "./node_modules/.bin/ts-node-dev --respawn --transpileOnly ./src/app.ts",
